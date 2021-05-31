@@ -1,0 +1,3 @@
+[submodule "Kaneda/external/spdlog"]
+	path = Kaneda/external/spdlog
+	url = https://github.com/gabime/spdlog.git

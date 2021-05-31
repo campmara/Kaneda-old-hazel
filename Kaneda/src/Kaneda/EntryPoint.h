@@ -5,8 +5,13 @@
 
 extern Kaneda::Application *Kaneda::CreateApplication();
 
-int main() {
-    printf("Kaneda Engine ~~~~~~~~~~~~~~~~\n");
+int main(int argc, char** argv) {
+    Kaneda::Log::Init();
+    K_CORE_WARN("Initialized Log!");
+
+    int a = 5;
+    K_INFO("Hello! Var = {0}", a);
+
     auto app = Kaneda::CreateApplication();
     app->Run();
     delete app;
